@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "373523321073",
+    "project_id": "quizzjeuxauth",
+    "storage_bucket": "quizzjeuxauth.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373523321073:android:c424fa7bc09abf73ded950",
+        "android_client_info": {
+          "package_name": "com.example.quizzjeux"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgN9Q_23COu-irwdSAjBI5AWBmO8DtIGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

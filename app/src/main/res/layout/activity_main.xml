@@ -12,32 +12,45 @@
 
 
     <TextView
+        android:id="@+id/menuTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quiz Game"
         android:textColor="@color/black"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142" />
+        app:layout_constraintBottom_toTopOf="@+id/menuPlayGame"
+        android:layout_marginTop="130dp"/>
 
     <TextView
-        android:id="@+id/menuPlay"
+        android:id="@+id/menuPlayGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Play"
+        android:text="Quiz Jeux Vidéo"
         android:textColor="@color/black"
-        android:textSize="36sp"
+        android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316" />
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/menuPlayGeo"
+        app:layout_constraintTop_toBottomOf="@+id/menuTitle"
+        />
+
+    <TextView
+        android:id="@+id/menuPlayGeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz Géographie"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuPlayGame"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

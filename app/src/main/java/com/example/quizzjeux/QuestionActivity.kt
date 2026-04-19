@@ -14,7 +14,8 @@ class QuestionActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityQuestionBinding
 
-    private val questionList = QuestionList.questions
+    private lateinit var questionList: List<QuestionAnswer>
+
 
     private var currentQuestionIndex = 0
     private var score = 0
@@ -26,6 +27,12 @@ class QuestionActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
+        val category = intent.getStringExtra("CATEGORY")
+        if (category == "GAME"){
+            questionList = QuestionList.questions
+        } else {
+            questionList = QuestionList.questionsGeo
+        }
         displayQuestion()
 
         binding.response1Button.setOnClickListener {

@@ -24,8 +24,17 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        binding.menuPlay.setOnClickListener {
-            startActivity(Intent(this, QuestionActivity::class.java))
+        binding.menuPlayGame.setOnClickListener {
+            val intent = Intent(this, QuestionActivity::class.java)
+            intent.putExtra("CATEGORY", "GAME")
+            startActivity(intent)
+            finish()
+        }
+
+        binding.menuPlayGeo.setOnClickListener {
+            val intent = Intent(this, QuestionActivity::class.java)
+            intent.putExtra("CATEGORY", "GEO")
+            startActivity(intent)
             finish()
         }
     }
